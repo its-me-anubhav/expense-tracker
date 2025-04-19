@@ -10,7 +10,10 @@ export const metadata = {
 };
 
 
-const inter = Inter({subset:["latin"]})
+const inter = Inter({
+  subsets: ['latin'],
+  preload: true,
+});
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
