@@ -18,7 +18,7 @@ const Header = async () => {
             alt="Welth Logo"
             width={200}
             height={80}
-            className="h-20 w-auto object-contain pl-10"
+            className="h-20 w-auto object-contain pl-0"
           />
         </Link>
 
