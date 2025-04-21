@@ -310,28 +310,32 @@ const AddTransactionForm = ({
       )}
 
        {/* Actions */}
-       <div className="flex gap-4">
-        <Button
-          type="button"
-          variant="outline"
-          className="w-90 hover:bg-pink-400"
-          onClick={() => router.back()}
-        >
-          Cancel
-        </Button>
-        <Button type="submit" className="w-90 bg-[#0f706c] hover:bg-pink-400"  disabled={transactionLoading}>
-          {transactionLoading ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              {editMode ? "Updating..." : "Creating..."}
-            </>
-          ) : editMode ? (
-            "Update Transaction"
-          ) : (
-            "Create Transaction"
-          )}
-        </Button>
-      </div>
+       <div className="flex flex-col sm:flex-row gap-4">
+      <Button
+        type="button"
+        variant="outline"
+        className="w-full sm:w-90 hover:bg-pink-400"
+        onClick={() => router.back()}
+      >
+        Cancel
+      </Button>
+      <Button
+        type="submit"
+        className="w-full sm:w-90 bg-[#0f706c] hover:bg-pink-400"
+        disabled={transactionLoading}
+      >
+        {transactionLoading ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            {editMode ? "Updating..." : "Creating..."}
+          </>
+        ) : editMode ? (
+          "Update Transaction"
+        ) : (
+          "Create Transaction"
+        )}
+      </Button>
+    </div>
 
   </form>
   )
