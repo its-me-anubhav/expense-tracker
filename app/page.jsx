@@ -96,7 +96,7 @@ export default function Home() {
   ]);
 
   return (
-    <div className="mt-33">
+    <div className="mt-17">
       {/* Hero Section */}
       <HeroSection />
 
