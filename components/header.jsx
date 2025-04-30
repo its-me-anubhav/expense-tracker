@@ -44,7 +44,7 @@ const Header = async () => {
             <a href="/transaction/create">
               <Button className="flex items-center bg-[#3da8a4] hover:bg-[#477a79] gap-2">
                 <PenBox className="text-black" size={18} />
-                <span className="hidden md:inline text-black">Add Transaction</span>
+                <span className="hidden md:inline text-black">Add Income/Expense</span>
               </Button>
             </a>
           </SignedIn>
