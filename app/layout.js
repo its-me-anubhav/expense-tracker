@@ -18,6 +18,14 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
     <html lang="en">
+
+    <head>
+        <link rel="icon" href="/fevican.png" type="image/png" sizes="32x32" />
+
+        <title>Income Expense Tracker</title>
+        <meta name="description" content="Track your income and expenses efficiently with our smart financial tracker." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       
       <body
         className={`${inter.className}`}
